@@ -1,0 +1,4 @@
+#!/bin/bash
+
+djangorestframework
+django-cors-headers
