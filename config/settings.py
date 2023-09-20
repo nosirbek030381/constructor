@@ -14,7 +14,8 @@ SECRET_KEY = 'django-insecure-u&*&(7deb&3#xmy&y**t%k@o(@c$rkj#p&_q3(+wl4+8b1c32n
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["164.92.182.100"]
+ALLOWED_HOSTS = ["*"]
+CORS_ORIGIN_ALLOW_ALL = True
 
 
 
@@ -69,15 +70,10 @@ WSGI_APPLICATION = 'config.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
-
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'konstructor',
-        'USER': 'javohir',
-        'PASSWORD': 'Javohir2003',
-        'HOST': 'localhost', 
-        'PORT': '5432',
+    "default": {
+        "ENGINE": "django.db.backends.sqlite3",
+        "NAME": "mydatabase",
     }
 }
 
